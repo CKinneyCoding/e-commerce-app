@@ -12,6 +12,15 @@ To easily populate your database with the requisite tables, `npm run create-db`.
 
 Once the app is running locally, you can access it in a browser at `http://localhost:<your-port>`
 
+## Running the app with Render
+Create a new Render web service.
+
+For the "Build Command", use `npm install --legacy-peer-deps`
+
+For the "Start Command", use `npm run create-db && npm run dev`
+
+Modify the `example.env` file within this repository to match your Render or manually set-up PostgreSQL instance host. You may also set Render environment variables for PGHOST and PGPORT when configuring the web service.
+
 ## Resources
 - [REST Architecture](https://www.codecademy.com/articles/what-is-rest)
 - [Using pgAdmin](https://www.pgadmin.org/docs/pgadmin4/development/getting_started.html)
